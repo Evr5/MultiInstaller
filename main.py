@@ -7,7 +7,7 @@ def load_installers(file):
     Reads a text file containing the relative paths of the installers.
     """
     if not os.path.exists(file):
-        print(f"❌ File not found: {file}")
+        input(f"❌ File not found: {file}. Press any key to exit the program.")
         return []
 
     with open(file, "r", encoding="utf-8") as f:
@@ -39,7 +39,7 @@ def launch_installers(paths):
                     except Exception as e:
                         print(f"⚠️ Error launching {full_path}: {e}")
         else:
-            print(f"❌ File not found: {full_path}")
+            input(f"❌ File not found: {full_path}. Please press Enter to continue.")
 
 if __name__ == "__main__":
     file = sys.argv[1] if len(sys.argv) > 1 else "installers.txt"  # Path to the installers file or "installers.txt" if not provided
