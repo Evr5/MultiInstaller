@@ -1,0 +1,3 @@
+Windows/AMD/amd_ryzen_master.exe
+Windows/AMD/amd-software-adrenalin-edition-25.8.1-minimalsetup-250801_web.exe
+Windows/Google Chrome/ChromeSetup.exe
